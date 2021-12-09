@@ -1,0 +1,51 @@
+{
+    "questionList": [
+        {
+            "no": 1,
+            "question": "Mana yang lebih berat?",
+            "name": "answer_1",
+            "answerList": [
+                "a. 100 kilogram gajah",
+                "b. 100 kilogram kapas"
+            ]
+        },
+        {
+            "no": 2,
+            "question": "Mana rasa nano-nano yang anda suka?",
+            "name": "answer_2",
+            "answerList": [
+                "a. Manis",
+                "b. Asam",
+                "c. Asin"
+            ]
+        },
+        {
+            "no": 3,
+            "question": "Salah satu dari jawaban ini adalah salah",
+            "name": "answer_3",
+            "answerList": [
+                "a. Salah",
+                "b. Benar"
+            ]
+        },
+        {
+            "no": 4,
+            "question": "Ketika mimpimu tak begitu indah...(lanjutkan)",
+            "name": "answer_4",
+            "answerList": [
+                "a. Yasudahlah",
+                "b. Tak pernah terwujud",
+                "c. Lallalallala..."
+            ]
+        },
+        {
+            "no": 5,
+            "question": "Linux diciptakan menggunakan...",
+            "name": "answer_5",
+            "answerList": [
+                "a. Python dan Node.js",
+                "b. C dan C++"
+            ]
+        }
+    ]
+}

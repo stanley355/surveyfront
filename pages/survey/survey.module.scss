@@ -1,0 +1,59 @@
+@import "../../styles/tokens/all";
+
+.survey {
+  padding: 0 $space-sm;
+
+  &_title {
+    text-align: center;
+    color: $brand-primary-color;
+  }
+
+  &_label {
+    display: block;
+    margin: $space-2xl 0 $space-xs;
+  }
+
+  &_input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $color-black;
+    padding: $space-sm $space-xs;
+    margin-bottom: $space-2xs;
+  }
+
+  &_errorMessage {
+    color: red;
+    margin: 0;
+  }
+
+  &_submitBtn {
+    border: none;
+    border-radius: $space-xl;
+    background: $brand-primary-color;
+    padding: $space-sm $space-xs;
+    margin: $space-sm 0;
+    color: $color-white;
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-size: $font-lg;
+    cursor: pointer;
+  }
+
+  @include breakpoint-lg {
+    margin: 5% 25% 50%;
+    padding: $space-sm;
+    border-radius: $space-xs;
+    border: 1px solid $brand-primary-color;
+    box-shadow: 0 0 8px 4px $brand-primary-color;
+
+    &_label {
+      font-size: $font-md;
+    }
+
+    &_submitBtn {
+      width: 90%;
+      margin: $space-sm auto;
+    }
+  }
+}
