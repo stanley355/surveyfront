@@ -1,3 +1,4 @@
+@import './tokens/all';
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -31,4 +32,14 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+}
+
+.home__link {
+  color: $color-white;
+  font-size: $font-2xl;
+  padding: $space-xs;
+  border: 1px solid $color-white;
+  border-radius: $space-2xs;
+  background: $brand-primary-color;
+  margin: $space-xs 0;
 }
