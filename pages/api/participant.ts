@@ -2,7 +2,7 @@ import axios from "axios";
 import type { NextApiRequest, NextApiResponse } from "next";
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
-  const URL = 'http://localhost:6000/participant/add';
+  const URL = "http://localhost:6000/api/participant/add";
 
   const { full_name, email, phone_number } = req.body.values;
 
@@ -11,7 +11,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     response = await axios.post(URL, {
       full_name,
       email,
-      phone_number
+      phone_number,
     });
   } catch (err) {
     response = {
@@ -22,7 +22,5 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     };
   }
 
-  res.statusCode = 200;
-  res.setHeader("Content-Type", "application/json");
   res.json(response.data);
 };

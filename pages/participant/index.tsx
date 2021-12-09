@@ -5,6 +5,7 @@ import * as Yup from "yup";
 import styles from "./participant.module.scss";
 
 import Input from "../../components/Input/Input";
+import addParticipant from "../../client/eventHandler/addParticipant";
 
 const Participant = () => {
   const [loading, setLoading] = useState(false);
@@ -28,9 +29,9 @@ const Participant = () => {
       <Formik
         initialValues={participantInitialValues}
         validationSchema={participantSchema}
-        onSubmit={async (values) => {
+        onSubmit={(values) => {
           setLoading(true);
-          // await startupparticipantHandler(values);
+          addParticipant(values);
           setLoading(false);
         }}
       >
