@@ -1,0 +1,7 @@
+$layout-desktop: 1024px;
+
+@mixin breakpoint-lg {
+    @media screen and (min-width: $layout-desktop) {
+      @content;
+    }
+}

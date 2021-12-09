@@ -1,0 +1,26 @@
+@import '../../styles/tokens/all';
+
+.header {
+    background: $brand-primary-color;
+    padding: $space-xs;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+        margin: 0;
+        color: $color-white;
+    }
+
+    &_loginBtn {
+        border: none;
+        background: none;
+
+        svg {
+            color: $color-white;
+            font-size: $font-2xl;
+        }
+    }
+}

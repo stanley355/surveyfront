@@ -1,0 +1,10 @@
+$base-space : 1rem;
+
+$space-2xs : calc(0.25 * #{$base-space}); // 4px
+$space-xs : calc(0.5 * #{$base-space}); // 8px
+$space-sm : calc(0.75 * #{$base-space}); // 12px
+$space-md : calc(1 * #{$base-space}); // 16px
+$space-lg : calc(1.25 * #{$base-space}); // 20px
+$space-xl : calc(1.5 * #{$base-space}); // 24px
+$space-2xl : calc(1.75 * #{$base-space}); // 28px
+$space-3xl : calc(2 * #{$base-space}); // 32px
