@@ -5,7 +5,7 @@ const AxiosAPI = async (options:any) => {
     method: options.method,
     headers: {
       'content-type': 'application/json;charset=utf-8',
-      ...(options.AuthorizationToken ? { Authorization: options.AuthorizationToken } : ''),
+      ...(options.authorization ? { Authorization: options.authorization } : ''),
     },
     ...(options.data ? { data: options.data } : ''),
   });
