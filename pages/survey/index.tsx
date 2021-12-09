@@ -28,12 +28,12 @@ const Survey = () => {
 
   const questionsComponent = (question: any) => {
     return (
-      <div>
+      <div className={styles.survey_question}>
         <div>
           {question.no} {question.question}{" "}
         </div>
         {question.answerList.map((answer: any) => (
-          <div>
+          <div key={answer}>
             <Field type='radio' name={question.name} value={answer} />
             <label htmlFor={question.name}>{answer}</label>
           </div>
@@ -51,6 +51,7 @@ const Survey = () => {
         validationSchema={surveySchema}
         onSubmit={async (values) => {
           setLoading(true);
+          console.log(values);
           // await startupsurveyHandler(values);
           setLoading(false);
         }}

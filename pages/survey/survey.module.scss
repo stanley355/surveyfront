@@ -2,28 +2,15 @@
 
 .survey {
   padding: 0 $space-sm;
-
+  
   &_title {
     text-align: center;
     color: $brand-primary-color;
+    margin-bottom: $space-lg;
   }
 
-  &_label {
-    display: block;
-    margin: $space-2xl 0 $space-xs;
-  }
-
-  &_input {
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid $color-black;
-    padding: $space-sm $space-xs;
-    margin-bottom: $space-2xs;
-  }
-
-  &_errorMessage {
-    color: red;
-    margin: 0;
+  &_question {
+    margin-bottom: $space-md;
   }
 
   &_submitBtn {
@@ -46,10 +33,6 @@
     border-radius: $space-xs;
     border: 1px solid $brand-primary-color;
     box-shadow: 0 0 8px 4px $brand-primary-color;
-
-    &_label {
-      font-size: $font-md;
-    }
 
     &_submitBtn {
       width: 90%;
