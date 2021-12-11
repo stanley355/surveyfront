@@ -1,0 +1,13 @@
+@import "../../../styles/tokens/all";
+
+.result {
+  width: 90%;
+  margin: 0 auto;
+  padding: $space-sm;
+  border: 1px solid black;
+  
+  th, td {
+    border: 1px solid grey;
+    padding: $space-xs;
+  }
+}
