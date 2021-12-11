@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import { Field, Form, Formik } from "formik";
 import * as Yup from "yup";
 import surveyQuestions from "../api/survey-questions.json";
-
+import jsCookie from 'js-cookie';
 import styles from "./survey.module.scss";
-
-import Input from "../../components/Input/Input";
+import addSurvey from "../../client/eventHandler/addSurvey";
 
 const Survey = () => {
   const [loading, setLoading] = useState(false);
@@ -25,6 +24,8 @@ const Survey = () => {
     answer_4: Yup.string().required("Wajib diisi"),
     answer_5: Yup.string().required("Wajib diisi"),
   });
+
+  const fullName = jsCookie.get('full_name') ? jsCookie.get('full_name') : '' ;
 
   const questionsComponent = (question: any) => {
     return (
@@ -51,8 +52,7 @@ const Survey = () => {
         validationSchema={surveySchema}
         onSubmit={async (values) => {
           setLoading(true);
-          console.log(values);
-          // await startupsurveyHandler(values);
+          addSurvey(fullName ? fullName : '', values)
           setLoading(false);
         }}
       >

@@ -1,7 +1,6 @@
 import jsCookie from "js-cookie";
 import AxiosAPI from "../lib/axiosAPI";
 
-
 const addParticipant = async (values: any) => {
   const response = await AxiosAPI({
     method: "POST",
@@ -12,10 +11,10 @@ const addParticipant = async (values: any) => {
   });
 
   if (response.data.success) {
-    jsCookie.set('full_name', response.data.full_name);
+    jsCookie.set("full_name", response.data.full_name);
     window.location.href = `/survey`;
   } else {
-    alert("Terjadi kesalahan pada sistem, silakan coba lagi!");
+    alert(response.data.console.error);
     window.location.reload();
   }
 };

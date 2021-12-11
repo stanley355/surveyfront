@@ -27,25 +27,6 @@
                 "a. Salah",
                 "b. Benar"
             ]
-        },
-        {
-            "no": 4,
-            "question": "Ketika mimpimu tak begitu indah...(lanjutkan)",
-            "name": "answer_4",
-            "answerList": [
-                "a. Yasudahlah",
-                "b. Tak pernah terwujud",
-                "c. Lallalallala..."
-            ]
-        },
-        {
-            "no": 5,
-            "question": "Linux diciptakan menggunakan...",
-            "name": "answer_5",
-            "answerList": [
-                "a. Python dan Node.js",
-                "b. C dan C++"
-            ]
         }
     ]
 }

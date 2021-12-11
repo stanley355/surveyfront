@@ -13,6 +13,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       email,
       phone_number,
     });
+    console.log(response);
   } catch (err) {
     response = {
       data: {
