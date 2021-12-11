@@ -1,4 +1,3 @@
-import jsCookie from "js-cookie";
 import AxiosAPI from "../lib/axiosAPI";
 
 
@@ -17,8 +16,7 @@ const addSurvey = async (fullName: any,values: any) => {
   });
 
   if (response.data.success) {
-    const fullName = jsCookie.get('full_name');
-    window.location.href = `/survey/${fullName}`;
+    window.location.href = `/survey/result`;
   } else {
     alert("Terjadi kesalahan pada sistem, silakan coba lagi!");
     window.location.reload();
