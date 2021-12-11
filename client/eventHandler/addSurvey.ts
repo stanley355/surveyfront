@@ -16,7 +16,7 @@ const addSurvey = async (fullName: any,values: any) => {
   });
 
   if (response.data.success) {
-    window.location.href = `/survey/result`;
+    window.location.href = `/survey/result/all`;
   } else {
     alert("Terjadi kesalahan pada sistem, silakan coba lagi!");
     window.location.reload();
